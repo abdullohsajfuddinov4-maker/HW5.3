@@ -35,5 +35,17 @@ def str_func(s):
 
 print(str_func([5, 4, 1, 'dhgh', 656, 'dh']))
 '''
+#3
+def len_soz(f):
+    def w(a):
+        l = [ i for i in a if len(i) >= 3 ]
+        return f(l)
+    return w
+
+@len_soz
+def soz(s):
+    return s
+ 
+print(soz(['anor','gilos','nok','it']))
 
 
